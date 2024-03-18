@@ -15,8 +15,7 @@
   "type": "library",
   "require": {
     "php": "^8.2",
-    "laravel/framework": "v11.0.7",
-    "ext-http": "*"
+    "laravel/framework": "v11.0.7"
   },
   "require-dev": {
     "illuminate/console": "v11.0.7",
