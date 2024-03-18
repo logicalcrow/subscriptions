@@ -38,8 +38,8 @@ class SubscriptionsServiceProvider extends ServiceProvider
     protected function publishConfig()
     {
         $this->publishes([
-            __DIR__ . '/../config/config.php' => config_path('subby.php')
-        ], 'subby.config');
+            __DIR__ . '/../config/config.php' => config_path('logicalcrow_subscription.php')
+        ], 'logicalcrow_subscription.config');
     }
 
 
@@ -59,7 +59,7 @@ class SubscriptionsServiceProvider extends ServiceProvider
             __DIR__ . '/../database/migrations/create_plan_subscription_schedules_table.php' => database_path('migrations/' . date('Y_m_d_His', time() + 5) . '_create_plan_subscription_schedules_table.php'),
             __DIR__ . '/../database/migrations/create_plan_combinations_table.php' => database_path('migrations/' . date('Y_m_d_His', time() + 6) . '_create_plan_combinations_table.php'),
             __DIR__ . '/../database/migrations/alter_plan_combinations_table.php' => database_path('migrations/' . date('Y_m_d_His', time()) . '_alter_plan_combinations_table.php')
-        ], 'logicalcrow.migrations');
+        ], 'logicalcrow_subscription.migrations');
     }
 
 }
