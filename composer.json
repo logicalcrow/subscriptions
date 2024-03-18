@@ -1,0 +1,54 @@
+{
+  "name": "logicalcrow/subscriptions",
+  "description": "Laravel Subscriptions",
+  "keywords": [
+    "laravel",
+    "Subscriptions"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Giovani Cespedes",
+      "email": "giovanni@logicalcrow.com"
+    }
+  ],
+  "type": "library",
+  "require": {
+    "php": "^8.2",
+    "laravel/framework": "v11.0.7",
+    "ext-http": "*"
+  },
+  "require-dev": {
+    "illuminate/console": "v11.0.7",
+    "phpunit/phpunit": "11.0.6",
+    "illuminate/container": "v11.0.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Logicalcrow\\Subscriptions\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Logicalcrow\\Subscriptions\\Tests\\": "tests",
+      "Logicalcrow\\Subscriptions\\Tests\\Database\\Factories\\": "tests/Database/Factories"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "config": {
+    "sort-packages": true,
+    "preferred-install": "dist",
+    "optimize-autoloader": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Logicalcrow\\Subscriptions\\SubscriptionsServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
